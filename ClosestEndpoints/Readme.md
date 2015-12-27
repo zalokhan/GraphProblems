@@ -1,9 +1,9 @@
 #Closest Endpoints
 
 Finds the closest Endpoint in the network.
-X	:	Endpoint
-O 	:	Open Node
-F 	:	Failed Node
+*	X	:	Endpoint
+*	O 	:	Open Node
+*	F 	:	Failed Node
 
 All the open nodes need to point to the closest Endpoint or to the open node
 which points to the closest endpoint.
@@ -27,9 +27,11 @@ F O F 	=>		F ? F
 F F F 			F F F
 ```
 If the open node has multiple paths to endpoints near it:
-1)	It needs to choose the shortest path.
-2)	The Order of priority to break ties in case of multiple paths of same 
-	length is : up (^), right (>), down (v) and left (<).
+*	1)	It needs to choose the shortest path.
+*	2)	The Order of priority to break ties in case of multiple paths of same 
+		length is : up (^), right (>), down (v) and left (<).
+
+Running time of the given solution in `closestEndpoint.java` is O(n)
 
 Example:
 ```
